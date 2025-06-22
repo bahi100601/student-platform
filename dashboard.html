@@ -1,0 +1,39 @@
+<!DOCTYPE html><html lang="ar"><head><meta charset="UTF-8"><title>لوحة البيانات</title>
+<link rel="stylesheet" href="style.css"></head><body>
+<div class="container"><h2>إدخال بيانات الطالب</h2>
+<form id="studForm">
+  <div><input type="text" id="fname" placeholder="الاسم"><input type="text" id="lname" placeholder="اللقب"></div>
+  <div><label>تاريخ الميلاد:</label><input type="date" id="dob"></div>
+  <input type="text" id="pob" placeholder="مكان الميلاد">
+  <input type="text" id="regNo" placeholder="رقم التسجيل">
+  <input type="password" id="regPassStud" placeholder="الرقم السري">
+  <select id="stream"><option value="">--اختر الشعبة--</option>
+    <option>علوم تجريبية</option><option>رياضيات</option><option>تقني رياضي هندسة كهربائية</option>
+    <option>تقني رياضي هندسة ميكانيكية</option><option>تقني رياضي هندسة مدنية</option>
+    <option>تقني رياضي هندسة طرائق</option><option>تسيير واقتصاد</option><option>آداب وفلسفة</option>
+    <option>آداب ولغات أجنبية</option></select>
+  <input type="text" id="phase1" placeholder="مرحلة التسجيل الأولي">
+  <input type="text" id="phase2" placeholder="مرحلة تأكيد التسجيل">
+  <input type="text" id="wish" placeholder="الرغبة">
+  <div><label>تاريخ الخدمات الاجتماعية:</label><input type="date" id="socDate"></div>
+  <div><label>تاريخ التسجيل البيداغوجي:</label><input type="date" id="pedDate"></div>
+  <textarea id="payNotes" placeholder="ملاحظات الدفع"></textarea>
+  <select id="state"><option value="">--اختر الولاية--</option>
+    <option>Alger</option><option>Oran</option><option>Constantine</option>
+    <option>Annaba</option>
+  </select>
+  <input type="text" id="major" placeholder="التخصص">
+  <input type="number" id="grade" placeholder="المعدل" step="0.01">
+  <div class="btn-group">
+    <button type="button" id="addStud" class="green">إضافة طالب</button>
+    <button type="button" id="delStud" class="red">حذف طالب</button>
+    <button type="button" id="clearForm" class="blue">مسح البيانات</button>
+    <button type="button" id="getStud" class="yellow">جلب البيانات</button>
+    <button type="button" id="editStud" style="background:#FF9800;color:#fff">تعديل</button>
+  </div>
+  <a href="https://docs.google.com/spreadsheets/d/ABC123456789/export?format=xlsx" target="_blank">
+  <button type="button" style="background:#6C63FF;color:white">تحميل Excel</button>
+</a>
+<p id="statusMsg"></p>
+</form>
+</div><script src="script.js"></script></body></html>
