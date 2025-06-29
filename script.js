@@ -110,4 +110,4 @@ if (location.pathname.endsWith('dashboard.html')) {
   };
 }
 
-} 
+
