@@ -1,4 +1,4 @@
-const scriptURL = 'https://script.google.com/macros/s/AKfycbwzm8zbJCpbTb-E089ZEnfEOHy9gbUQTtKWS0VhKiDiddqLw_LbXvJ91i6-bJV8W6AxKw/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyGnMnTREHwBwevZTFDUUyGsAmjUygSoqrwz-uS1jGo9zp8I8qwIW20NExXj6UgbbP1Cw/exec';
 
 let users = JSON.parse(localStorage.getItem('users') || '[]');
 
